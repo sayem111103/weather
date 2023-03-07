@@ -12,16 +12,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            background: url(images/weather2.jpg) no-repeat;
+            background: url(images/latest-bg.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
         }
 
-        .weather-status{
-            background-color: rgb(110, 31, 234, 0.4);
-            padding: 20px;
+        .weather-status {
+            background-color: #00ffff85;
+            border-radius: 15px;
             width: 50%;
             margin: 0 auto;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 576px) {
+            #city-name{
+                font-size: 25px;
+            }
         }
     </style>
 </head>
