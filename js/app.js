@@ -7,7 +7,6 @@ const weatherData = (cityName) => {
 };
 
 const functionCall = (data) =>{
-    displayWeather('city-name', data.name)
     displayWeather('temperature-value', data.main? Math.ceil(data.main.temp) : 'N/A')
     displayWeather('weather-situation', data.weather? data.weather[0].description : 'N/A')
     displayWeather('city-name', data.name)
@@ -23,6 +22,7 @@ document.getElementById('searchBtn').addEventListener('click', function(){
     const inPut = document.getElementById('inputField');
     let inPutValue = inPut.value;
     weatherData(inPutValue)
+    document.getElementById('city-name').innerText = inPutValue? inPutValue : 'Undefined';
 })
 
 document.getElementById('inputField').addEventListener('keypress', function(event){

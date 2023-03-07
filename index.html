@@ -15,14 +15,21 @@
             background: url(images/latest-bg.jpg) no-repeat;
             background-size: cover;
             height: 100vh;
+            background-position: center;
         }
 
         .weather-status {
-            background-color: #00ffff85;
+            background-color: rgba(255, 255, 255, 0.241);
+            backdrop-filter: blur(3px);
             border-radius: 15px;
-            width: 50%;
+            height: 50%;
             margin: 0 auto;
             overflow: hidden;
+            padding: 100px 0;
+        }
+
+        #city-name{
+            text-transform: capitalize;
         }
 
         @media screen and (max-width: 576px) {
