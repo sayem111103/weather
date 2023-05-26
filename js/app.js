@@ -1,6 +1,7 @@
+const API_KEY = `ec6695c0f2ace819446ade5a6734b982`;
 const weatherData = (cityName) => {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=ec6695c0f2ace819446ade5a6734b982&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
   )
     .then((res) => res.json())
     .then((data) => functionCall(data));
